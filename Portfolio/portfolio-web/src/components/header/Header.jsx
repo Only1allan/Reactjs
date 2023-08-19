@@ -1,0 +1,26 @@
+import React from 'react'
+import './header.css'
+import CTA from './CTA'
+import dp from '../../assets/DP.jpg'
+import Socials from './Socials'
+
+const header = () => {
+  return (
+    <header>
+        <div className="container header__container">
+            <h5> Hello I'm </h5>
+            <h1>Allan Kariuki</h1>
+            <h5 className="text-light">Full Stack Engineer</h5>
+            <CTA/>
+            <Socials/>
+
+            <div className="me">
+                <img src={dp} alt="me" />
+            </div>
+            
+        </div>
+    </header>
+  )
+}
+
+export default header
